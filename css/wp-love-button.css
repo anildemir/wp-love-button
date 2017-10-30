@@ -1,0 +1,134 @@
+/*
+ * WP Love Button CSS
+ */
+
+.wplb-wrapper {
+    float: left;
+    text-align: center;
+}
+.wplb-wrapper span {
+    display: inline-block;
+    min-width: 24px;
+    margin-left: 5px;
+    text-align: right;
+    color: black;
+    font-weight: bold;
+}
+.wplb-wrapper a {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 2px;
+    background-color: rosybrown;
+    background-size: 18px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.05);
+    line-height: 20px;
+}
+.wplb-wrapper a:focus {
+    outline: none;
+}
+.wplb-loved a {
+    color: black;
+    background: palevioletred;
+}
+.wplb-loved a:focus {
+    outline: none;
+}
+.wplb-loved span {
+    color: black;
+}
+
+/*
+ * Widget CSS
+ */
+
+.wplb-widget-area {
+    width: 200px;
+    padding-bottom: 3em;
+}
+.wplb-widget-area h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+}
+.wplb-widget-area ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.wplb-widget-area li {
+    text-align: center;
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+.wplb-widget-area li a {
+    display: block;
+    width: 200px;
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    color: #000;
+}
+.wplb-widget-area li a:hover {
+    background: rgba(237, 28, 64, .1);
+    font-size: 25px;
+}
+/*
+ * Shortcode CSS
+ */
+
+#wplb-tags-loves {
+    width: 500px;
+    margin: 50px auto;
+    border-spacing: 0;
+    text-align: center;
+    color: #333;
+    border: 2px solid rosybrown;
+    border-collapse: separate;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .16);
+    font-size: .9em;
+    font-weight: 300;
+    line-height: 40px;
+}
+#wplb-tags-loves th {
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: rosybrown;
+}
+#wplb-tags-loves td {
+    text-align: center;
+}
+#wplb-tags-loves tr:hover:not(th) {
+    background-color: rgba(237, 28, 64, .1);
+}
+input[type="button"].wplb-button {
+    padding: 8px 16px;
+    transition: all .3s;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rosybrown;
+    font-size: 15px;
+}
+input[type="button"].wplb-button:not(.wplb-active) {
+    background-color: rosybrown;
+}
+input[type="button"].wplb-button:hover:not(.wplb-active) {
+    color: #888;
+    background-color: #fff5f6;
+}
+#wplb-buttons {
+    padding-left: 150px;
+}
+.wplb-active {
+    background-color: palevioletred !important;
+}
